@@ -33,7 +33,7 @@
 .primary-text{
     max-width: 525px;
     font-family: var(--font-title);
-    font-size: 7.4dvw;
+    font-size: 8.2dvw;
 }
 .primary-text__contrast{
     font-family: var(--font-contrast);
@@ -41,7 +41,7 @@
 }
 .second-text{
     max-width: 660px;
-    font-size: 3.2dvw;
+    font-size: 3.6dvw;
 }
 
 .button__wrap{
@@ -51,7 +51,7 @@
     background-color: var(--color-primal_2);
     color: var(--color-neutral_0);
     font-family: var(--font-title);
-    font-size: 1.5rem;
+    font-size: 1.5em;
     padding: 15px 55px;
     position: relative;
     border: none;
@@ -73,7 +73,13 @@
     width: 100%;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (max-width: 450px) {
+    .button{
+        padding: 3.33dvw 12.22dvw;
+    }
+}
+
+@media screen and (min-width: 710px) {
     .primary-text{
         font-family: var(--font-title);
         font-size: 3.6rem;

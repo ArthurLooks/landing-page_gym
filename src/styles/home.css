@@ -1,0 +1,19 @@
+.home{
+    background: url(../assets/wallpaper01.jpg) center center no-repeat;
+    background-size: cover;
+    color: var(--color-neutral_0);
+    height: 100vh;
+    padding: 5dvw;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.roller{
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+}

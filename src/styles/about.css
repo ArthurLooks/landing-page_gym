@@ -1,0 +1,49 @@
+.about{
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    gap: 5dvh;
+    padding: 5dvw;
+}
+.about-content{
+    color: var(--color-primal_2);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.about-content aside{
+    columns: 3;
+}
+.about-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width: 80dvw;
+}
+
+@media screen and (min-width: 780px) {
+    .about{
+        flex-flow: row nowrap;
+    }
+    .about-content{
+        width: 50%;
+    }
+    .about-content aside{
+        font-size: 1.2rem;
+    }
+    .about-image{
+        width: 50%;
+    }
+    .image{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1080px) {
+    .image{
+        width: 80%;
+    }
+}

@@ -1,0 +1,104 @@
+.header{
+    backdrop-filter: blur(10px);
+    width: 100dvw;
+    height: 65px;
+    padding: 0px 10dvw;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+.logo{
+    background-color: var(--color-primal_0);
+    box-shadow: var(--shadow_1);
+    color: var(--color-neutral_0);
+    text-decoration: none;
+    padding: 15px 30px;
+    position: relative;
+    top: 30px;
+    cursor: pointer;
+}
+.logo h1{
+    font-family: var(--font-title);
+}
+.nav-list{
+    background-color: var(--color-primal_2);
+    box-shadow: var(--shadow_0);
+    padding: 10px 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    position: absolute;
+    right: 5%;
+    top: 100px;
+    
+    height: 0; /* Inicialmente fechado */
+    overflow: hidden; /* Esconde o conteúdo quando fechado */
+    opacity: 0;
+    transition: height 0.4s ease-out, opacity 0.4s ease-out; /* Transições suaves */
+}
+.nav-list__active{
+    height: 215px;
+    opacity: 1;
+}
+.nav-list__itens a{
+    color: var(--color-neutral_0);
+    text-decoration: none;
+    font-family: var(--font-title);
+    display: block;
+    padding: 10px 30px;
+    position: relative;
+}
+.nav-list__itens a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-neutral_0);
+    transition: all 1s ease-in-out;
+}
+.nav-list__itens a:hover::before{
+    width: 100%;
+}
+.nav-menu{
+    background-color: var(--color-primal_2);
+    box-shadow: var(--shadow_0);
+    color: var(--color-neutral_0);
+    padding: 5px 10px;
+    font-size: 1.6rem;
+    position: relative;
+    top: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width:950px) {
+    .nav-list{
+        background-color: none;
+        box-shadow: var(--shadow_0);
+        height: 100%;
+        padding: 10px 0px;
+        display: flex;
+        font-size: 1.2em;
+        flex-flow: row nowrap;
+        text-align: center;
+        position: relative;
+        right: 0;
+        top: 30px;
+        opacity: 1;
+    }
+    .nav-list__itens a{
+        color: var(--color-neutral_0);
+        text-decoration: none;
+        font-family: var(--font-title);
+        display: block;
+        padding: 10px 30px;
+        position: relative;
+    }
+    .nav-menu{
+        display: none;
+    }
+}

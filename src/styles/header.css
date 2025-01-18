@@ -1,5 +1,6 @@
 .header{
     backdrop-filter: blur(10px);
+    box-shadow: var(--shadow_1);
     width: 100dvw;
     height: 65px;
     padding: 0px 10dvw;
@@ -8,19 +9,6 @@
     justify-content: space-between;
     align-items: center;
     z-index: 10;
-}
-.logo{
-    background-color: var(--color-primal_0);
-    box-shadow: var(--shadow_1);
-    color: var(--color-neutral_0);
-    text-decoration: none;
-    padding: 15px 30px;
-    position: relative;
-    top: 30px;
-    cursor: pointer;
-}
-.logo h1{
-    font-family: var(--font-title);
 }
 .nav-list{
     background-color: var(--color-primal_2);

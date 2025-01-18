@@ -5,6 +5,7 @@
 @import url(about.css);
 @import url(services.css);
 @import url(contact.css);
+@import url(footer.css);
 
 *{
     margin: 0;
@@ -30,6 +31,10 @@
     --shadow_1: 3px 3px 10px rgba(0, 0, 0, 0.4);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .primary-text{
     max-width: 525px;
     font-family: var(--font-title);
@@ -44,6 +49,37 @@
     font-size: 3.6dvw;
 }
 
+.whatsapp{
+    background-color: #16b12b;
+    color: var(--color-neutral_0);
+    text-decoration: none;
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 5dvw;
+    right: 5dvw;
+    z-index: 5;
+}
+
+.logo{
+    background-color: var(--color-primal_0);
+    box-shadow: var(--shadow_1);
+    color: var(--color-neutral_0);
+    text-decoration: none;
+    padding: 15px 30px;
+    position: relative;
+    top: 30px;
+    cursor: pointer;
+}
+.logo h1{
+    font-family: var(--font-title);
+}
+
 .button__wrap{
     filter: drop-shadow(var(--shadow_0));
 }
@@ -52,7 +88,7 @@
     color: var(--color-neutral_0);
     font-family: var(--font-title);
     font-size: 1.5em;
-    padding: 15px 55px;
+    padding: 3.33dvw 12.22dvw;
     position: relative;
     border: none;
     clip-path: polygon(80% 0%, 100% 40%, 100% 100%, 0px 100%, 0px 0px);
@@ -73,9 +109,9 @@
     width: 100%;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (min-width: 450px) {
     .button{
-        padding: 3.33dvw 12.22dvw;
+        padding: 15px 55px;
     }
 }
 

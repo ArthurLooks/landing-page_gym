@@ -13,7 +13,13 @@
 }
 .roller{
     font-family: var(--font-title);
-    font-size: 1.5rem;
+    font-size: 5.4dvw;
     position: absolute;
     bottom: 0;
+}
+
+@media screen and (min-width: 450px) {
+    .roller{
+        font-size: 1.5rem;
+    }
 }

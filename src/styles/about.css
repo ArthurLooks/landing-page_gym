@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: column-reverse nowrap;
     gap: 5dvh;
-    padding: 5dvw;
+    padding: 100px 5dvw;
 }
 .about-content{
     color: var(--color-primal_2);

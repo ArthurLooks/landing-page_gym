@@ -1,5 +1,35 @@
 .contact{
-    background-color: var(--color-primal_2);
-    height: 100dvh;
+    background-color: var(--color-neutral_0);
+    color: var(--color-primal_2);
+    padding: 100px 5dvw;
+    display: flex;
+    gap: 5dvh;
+    flex-flow: column nowrap;
+}
 
+.customer__field{
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px var(--color-primal_2);
+}
+.customer label{
+    display: none;
+}
+.customer input[text], input[tel], input[email]{
+    padding: 10px;
+}
+
+.local{
+    display: flex;
+    gap: 1em;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.map{
+    width: 100%;
 }

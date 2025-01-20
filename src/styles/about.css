@@ -25,15 +25,12 @@
     width: 80dvw;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 780px) { /*Media Query para tablets e Desktops*/
     .about{
         flex-flow: row nowrap;
     }
     .about-content{
         width: 50%;
-    }
-    .about-content aside{
-        font-size: 1.2rem;
     }
     .about-image{
         width: 50%;
@@ -42,7 +39,7 @@
         width: 100%;
     }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1080px) { /*Media Query para telas grandes*/
     .image{
         width: 80%;
     }

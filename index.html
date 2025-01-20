@@ -34,13 +34,15 @@
                 <p class="second-text">
                     Transforme-se na nossa academia! Oferecemos equipamentos modernos, instrutores qualificados e aulas para todos os níveis. Alcance seus objetivos fitness conosco. Experimente hoje!
                 </p>
-                <div class="button__wrap">
+                <div class="button__wrap second-text">
                     <button class="button">
                         Começar
                     </button>
                 </div>
                 <aside class="roller">
-                    WellHub <i class="fa-solid fa-dumbbell"></i> GymPass
+                    <p class="second-text">
+                        WellHub <i class="fa-solid fa-dumbbell"></i> GymPass <i class="fa-solid fa-dumbbell"></i> TotalPass
+                    </p>
                 </aside>
         </section>
         <section id="about" class="about">
@@ -85,11 +87,11 @@
                             Contratar agora
                         </button>
                         <ul class="card__benefits">
-                            <li><strong>Acesso ilimitado em todos os horários</strong></li>
-                            <li><strong>Treinos personalizados atualizados mensalmente</strong></li>
-                            <li><strong>Aulas coletivas (HIIT, Yoga, Pilates e mais)</strong></li>
-                            <li><strong>Participação em workshops exclusivos</strong></li>
-                            <li><strong>Acompanhamento semanal com personal trainer</strong></li>
+                            <li><i class="fa-solid fa-ban"></i><del>Acesso para até 3 pessoas da mesma família</del></li>
+                            <li><i class="fa-regular fa-circle-check"></i><strong>Treinos personalizados atualizados mensalmente</strong></li>
+                            <li><i class="fa-regular fa-circle-check"></i><strong>Aulas coletivas (HIIT, Yoga, Pilates e mais)</strong></li>
+                            <li><i class="fa-regular fa-circle-check"></i><strong>Acesso ilimitado em todos os horários</strong></li>
+                            <li><i class="fa-regular fa-circle-check"></i><strong>Acompanhamento semanal com personal trainer</strong></li>
                         </ul>
                         <button class="card__benefits-btn">
                             Mostrar Benefícios <i class="fa-solid fa-angle-down"></i>
@@ -109,10 +111,11 @@
                             Contratar agora
                         </button>
                         <ul class="card__benefits">
-                            <li><strong>Acesso à academia em horários específicos</strong></li>
-                            <li><strong>Avaliação física inicial gratuita</strong></li>
-                            <li><strong>Uso de equipamentos e infraestrutura geral</strong></li>
-                            <li><strong>Suporte básico com nossos profissionais</strong></li>
+                            <li><i class="fa-solid fa-ban"></i><del>Acesso para até 3 pessoas da mesma família</del></li>
+                            <li><i class="fa-solid fa-ban"></i><del>Treinos personalizados atualizados mensalmente</del></li>
+                            <li><i class="fa-solid fa-ban"></i><del>Aulas coletivas (HIIT, Yoga, Pilates e mais)</del></li>
+                            <li><i class="fa-regular fa-circle-check"></i><strong>Acesso ilimitado em todos os horários</strong></li>
+                            <li><i class="fa-regular fa-circle-check"></i><strong>Acompanhamento semanal com personal trainer</strong></li>
                         </ul>
                         <button class="card__benefits-btn">
                             Mostrar Benefícios <i class="fa-solid fa-angle-down"></i>
@@ -132,11 +135,11 @@
                             Contratar agora
                         </button>
                         <ul class="card__benefits">
-                            <li><strong>Acesso para até 3 pessoas da mesma família</strong></li>
-                            <li><strong>Treinos personalizados para cada membro</strong></li>
-                            <li><strong>Aulas coletivas inclusas para todas as idades</strong></li>
-                            <li><strong>Descontos exclusivos em eventos e suplementos</strong></li>
-                            <li><strong>Acompanhamento mensal com nossos profissionais</strong></li>
+                            <li><i class="fa-regular fa-circle-check"></i><strong>Acesso para até 3 pessoas da mesma família</strong></li>
+                            <li><i class="fa-regular fa-circle-check"></i><strong>Treinos personalizados atualizados mensalmente</strong></li>
+                            <li><i class="fa-regular fa-circle-check"></i><strong>Aulas coletivas (HIIT, Yoga, Pilates e mais)</strong></li>
+                            <li><i class="fa-regular fa-circle-check"></i><strong>Acesso ilimitado em todos os horários</strong></li>
+                            <li><i class="fa-regular fa-circle-check"></i><strong>Acompanhamento semanal com personal trainer</strong></li>
                         </ul>
                         <button class="card__benefits-btn">
                             Mostrar Benefícios <i class="fa-solid fa-angle-down"></i>
@@ -148,26 +151,26 @@
         </section>
         <section id="contact" class="contact">
             <form class="customer" action="" autocomplete="on">
-                <fieldset class="customer__field">
+                <fieldset class="second-text customer__field">
                     <legend>
                         <h1 class="primary-text">
                             Entre em contato
                         </h1>
                     </legend>
-                    <p class="second-text">
-                        Matricule-se agora mesmo! Fale com um de nossos atendentes
-                    </p>
                     <p>
+                        Matricule-se agora mesmo! Fale com um de nossos atendentes.
+                    </p>
+                    <p class="inputs">
                         <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome" autocomplete="name" placeholder="Name" required>
+                        <input type="text" name="nome" id="nome" autocomplete="name" placeholder="Nome" required maxlength="50">
                     </p>
-                    <p>
+                    <p class="inputs">
                         <label for="phone">Telefone</label>
-                        <input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="Telefone" required>
+                        <input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="Telefone" required maxlength="25">
                     </p>
-                    <p>
+                    <p class="inputs">
                         <label for="mail">E-mail</label>
-                        <input type="email" name="mail" id="mail" autocomplete="email" placeholder="E-mail" required>
+                        <input type="email" name="mail" id="mail" autocomplete="email" placeholder="E-mail" required maxlength="50">
                     </p>
                     <input type="submit" value="Solicitar contato" class="button">
                 </fieldset>
@@ -176,6 +179,9 @@
                 <h1 class="primary-text">
                     Ou venha nos conhecer
                 </h1>
+                <p class="second-text">
+                    Avenida das Academias, nº 1010, Habitos.
+                </p>
                 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7544.2973861149985!2d-48.26734766171518!3d-19.01316842098129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1737227424186!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </aside>
         </section>
@@ -191,14 +197,14 @@
             <ul class="social__medias">
                 <li><a href="https://www.instagram.com/arthur_looks/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="https://mail.google.com/mail/u/1/#chats?compose=DmwnWrRmVPSpRqkWsrVGFRDznrMtqTVGvrCKbwMDjzGwKHrQSXzXRmVkMscmLdFgRHGVncZKqlPl" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href="+55(34)99651-7780"><i class="fa-solid fa-phone"></i></a></li>
-                <li><a href="+55(34)99651-7780"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="tel:+55(34)99651-7780"><i class="fa-solid fa-phone"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=5534996517780" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/arthur-rodrigues-looks-9292922b9/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </section>
         <section class="info second-text">
             <p class="info__text">
-                Avenida das Academias, nº 1010, CEP 01010-100
+                Avenida das Academias, nº 1010, Habitos, CEP 01010-100
             </p>
             <p class="info__text">
                 faleconosco@redgym.com

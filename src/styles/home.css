@@ -12,14 +12,27 @@
     text-align: center;
 }
 .roller{
-    font-family: var(--font-title);
-    font-size: 5.4dvw;
+    background-color: var(--color-primal_0);
+    width: 100%;
+    padding: 0.5rem;
     position: absolute;
     bottom: 0;
+    overflow: hidden;
+}
+.roller .second-text{
+    max-width: 100%;
+    font-family: var(--font-title);
+    display: flex;
+    gap: 1rem;
+    animation: moveText 8s infinite linear;
 }
 
-@media screen and (min-width: 450px) {
-    .roller{
-        font-size: 1.5rem;
+@keyframes moveText {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
     }
 }

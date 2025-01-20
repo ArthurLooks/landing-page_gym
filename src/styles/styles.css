@@ -27,6 +27,8 @@
     --color-primal_1: #221F38;
     --color-primal_2: #141220;
 
+    --color-whatsapp: #4DAF4A;
+
     --shadow_0: 0px 0px 5px rgba(255, 250, 250, 0.4);
     --shadow_1: 3px 3px 10px rgba(0, 0, 0, 0.4);
 }
@@ -50,7 +52,7 @@ html{
 }
 
 .whatsapp{
-    background-color: #16b12b;
+    background-color: var(--color-whatsapp);
     color: var(--color-neutral_0);
     text-decoration: none;
     font-size: 2rem;
@@ -109,18 +111,18 @@ html{
     width: 100%;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 450px) { /*Cards começam a transbordar*/
     .button{
-        padding: 15px 55px;
+        padding: 1rem 3.5rem;
     }
 }
 
-@media screen and (min-width: 710px) {
+@media screen and (min-width: 500px) { /*Tamanho máximo das fontes*/
     .primary-text{
         font-family: var(--font-title);
-        font-size: 3.6rem;
+        font-size: 2.8rem;
     }
     .second-text{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }

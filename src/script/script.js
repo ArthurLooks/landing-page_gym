@@ -24,23 +24,15 @@ document.body.addEventListener('click', removeNavList);
 navMenu.addEventListener('click', (event) => {event.stopPropagation()});
 navList.addEventListener('click', (event) => {event.stopPropagation()});
 
-// Services cards
+// Services cards benefits button
 
-const displayBenefits0 = () => {
-    benefits[0].classList.toggle('card__benefits__active')
-    benefits[0].classList.contains('card__benefits__active') ? showBenefits[0].innerHTML = 'Ocultar benefícios <i class="fa-solid fa-angle-up"></i>' : showBenefits[0].innerHTML = 'Mostrar benefícios <i class="fa-solid fa-angle-down"></i>'
-}
-const displayBenefits1 = () => {
-    benefits[1].classList.toggle('card__benefits__active')
-    benefits[1].classList.contains('card__benefits__active') ? showBenefits[1].innerHTML = 'Ocultar benefícios <i class="fa-solid fa-angle-up"></i>' : showBenefits[1].innerHTML = 'Mostrar benefícios <i class="fa-solid fa-angle-down"></i>'
-}
-const displayBenefits2 = () => {
-    benefits[2].classList.toggle('card__benefits__active')
-    benefits[2].classList.contains('card__benefits__active') ? showBenefits[2].innerHTML = 'Ocultar benefícios <i class="fa-solid fa-angle-up"></i>' : showBenefits[2].innerHTML = 'Mostrar benefícios <i class="fa-solid fa-angle-down"></i>'
-}
-showBenefits[0].addEventListener('click', displayBenefits0)
-showBenefits[1].addEventListener('click', displayBenefits1)
-showBenefits[2].addEventListener('click', displayBenefits2)
+const toggleBenefits = (index) => {
+  benefits[index].classList.toggle('card__benefits__active');
+  showBenefits[index].innerHTML = benefits[index].classList.contains('card__benefits__active') ? 'Ocultar benefícios <i class="fa-solid fa-angle-up"></i>' : 'Mostrar benefícios <i class="fa-solid fa-angle-down"></i>';
+};
+showBenefits.forEach((button, index) => button.addEventListener('click', () => toggleBenefits(index)));
+// Diretamente passar toggleBenefits(index) não funciona, pois executa a função imediatamente com cada index passado no forEach(). A arrow function () => toggleBenefits(index) cria uma função intermediária que será chamada apenas no momento do clique. Isso assegura que o evento de clique seja associado corretamente ao índice específico de cada botão.
+
 
 // Plans slide
 

@@ -23,8 +23,8 @@
     max-width: 100%;
     font-family: var(--font-title);
     display: flex;
+    justify-content: center;
     gap: 1rem;
-    animation: moveText 8s infinite linear;
 }
 
 @keyframes moveText {
@@ -34,5 +34,11 @@
 
     100% {
         transform: translateX(-100%);
+    }
+}
+
+@media screen and (min-width: 780px) { /*Media Query para tablets e Desktops*/
+    .roller .second-text{
+    animation: moveText 8s infinite linear;
     }
 }

@@ -13,10 +13,7 @@
   color: var(--color-neutral_0);
 }
 
-.fa-angle-right {
-  display: none;
-}
-.fa-angle-left {
+.wrapper .fa-angle-right, .fa-angle-left{
   display: none;
 }
 .carousel {
@@ -31,17 +28,11 @@
   color: var(--color-neutral_0);
   width: 71dvw;
   font-size: 3.6dvw;
-  height: fit-content;
   padding: 1em;
   border-radius: 8px;
   border-bottom: 3px outset rgba(255, 255, 255, 0.44);
   border-right: 2px outset rgba(255, 255, 255, 0.545);
   overflow: hidden;
-  transform: skewX(-10deg);
-  transition: 0.4s;
-}
-.card:hover {
-  transform: skew(0deg);
 }
 .card__primary-text {
   color: var(--color-neutral_0);
@@ -49,7 +40,6 @@
   font-size: 2.27em;
   text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.573);
   margin: 1rem;
-  text-align: center;
 }
 .card__second-text {
   color: var(--color-neutral_0);
@@ -109,18 +99,15 @@
 
 @media screen and (max-width: 1280px) and (min-width: 780px) { /*Media Query para tablets e Desktops*/
   .wrapper {
-    width: 100%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .wrapper .fa-angle-right,
-  .fa-angle-left {
+  .wrapper .fa-angle-right, .fa-angle-left {
     background-color: var(--color-primal_2);
     color: var(--color-neutral_0);
-    width: fit-content;
-    height: fit-content;
+    display: block;
     padding: 12px;
     font-size: 1.5em;
     border-radius: 100%;
@@ -130,21 +117,19 @@
     z-index: 2;
   }
   .fa-angle-right {
-    display: block;
     right: 0;
     transform: translateX(50%);
   }
   .fa-angle-left {
-    display: block;
     left: 0;
     transform: translateX(-50%);
   }
   .carousel {
-    box-sizing: content-box;
-    width: 640px;
-    padding: 0px 10.5dvw 70px 10.5dvw;
+    max-width: calc(640px + 12dvw);
+    width: 90dvw;
+    padding: 0px 60px 70px 0px;
     display: grid;
-    gap: 11dvw;
+    gap: 7dvw;
     grid-auto-flow: column;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -167,5 +152,12 @@
 @media screen and (min-width: 1280px) { /*Media Query para telas grandes*/
   .carousel {
     flex-flow: row nowrap;
+  }
+  .card{
+    transform: skewX(-10deg);
+    transition: 0.4s;
+  }
+  .card:hover {
+    transform: skew(0deg);
   }
 }

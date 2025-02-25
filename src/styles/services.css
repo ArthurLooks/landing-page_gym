@@ -27,6 +27,7 @@
   box-shadow: 40px 50px 30px rgba(0, 0, 0, 0.28);
   color: var(--color-neutral_0);
   width: 71dvw;
+  height: fit-content;
   font-size: 3.6dvw;
   padding: 1em;
   border-radius: 8px;
